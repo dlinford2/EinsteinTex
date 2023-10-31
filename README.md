@@ -1,11 +1,4 @@
 # EinsteinTex
-This is a program that utiilizes EinsteinPy to create a TeX file containing a number of important tensors from a user specified metric.
-
-## Installation
-
-EinsteinTex can be installed using:
-
-> pip install EinsteinTex==0.1
 
 ## Use
 
