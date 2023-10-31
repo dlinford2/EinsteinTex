@@ -43,6 +43,35 @@ einstein_tex.print_christoffel_symbols(christoffel)
 einstein_tex.print_end()
 ```
 
+You can also have EinsteinTex print an entire document, containing a number of different tensors, etc, from a given metric, e.g.,
+
+```python
+from EinsteinTex import EinsteinTex
+
+# Initialize EinsteinTex with the desired output file name
+einstein_tex = EinsteinTex('my_gr_document.tex')
+einstein_tex.print_entire_document(metric_tensor, 'FLRW Results')
+```
+
+Users can specify their own metric by modifying the following code snippet:
+
+```python
+import sympy as sp
+from einsteinpy.symbolic import MetricTensor
+
+t, r, theta, phi = sp.symbols('t r theta phi') # Define a set of symbols to use for coordinates
+a = sp.Function('a')(t)  # Scale factor
+tensor = MetricTensor( # Define the metric itself
+    sp.Array([
+        [-1, 0, 0, 0],
+        [0, a**2, 0, 0],
+        [0, 0, a**2, 0],
+        [0, 0, 0, a**2]
+    ]),
+    syms=(t, r, theta, phi)
+)
+```
+
 ## Documentation
 
 For detailed information on how to use EinsteinTex, you can refer to the documentation available on GitHub.
