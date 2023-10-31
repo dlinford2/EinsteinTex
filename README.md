@@ -2,13 +2,15 @@
 
 ## Use
 
-EinsteinTex is a Python package designed to make your life easier when working with LaTeX documents for General Relativity computations and theory. This package provides a convenient way to generate LaTeX files containing equations, metrics, and tensors commonly used in General Relativity research and education.
+EinsteinTex is a Python package designed to make your life easier when working with LaTeX documents for comptutations related to General Relativity. This package provides a convenient way to generate LaTeX files containing equations, metrics, and tensors commonly used in General Relativity.
 
 ## Features
 
-Automatic LaTeX Generation: EinsteinTex automatically generates LaTeX code for various components, including Metric Tensors, Christoffel Symbols, Riemann Curvature Tensors, Ricci Tensors, Ricci Scalars, and Einstein Tensors.
-Customization: You can easily customize the output file name and the document title to suit your needs.
-Optimized for General Relativity: EinsteinTex is designed specifically for use in General Relativity research, making it a valuable tool for students, educators, and researchers in the field.
+* Automatic LaTeX Generation: EinsteinTex automatically generates LaTeX code for various components, including Metric Tensors, Christoffel Symbols, Riemann Curvature Tensors, Ricci Tensors, Ricci Scalars, and Einstein Tensors.
+
+* Customization: You can easily customize the output file name and the document title to suit your needs.
+
+* Optimized for General Relativity: EinsteinTex is designed specifically for use in General Relativity research, making it a valuable tool for students, educators, and researchers in the field.
 
 ## Installation
 
