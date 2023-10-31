@@ -16,7 +16,9 @@ EinsteinTex is a Python package designed to make your life easier when working w
 
 You can install EinsteinTex via pip:
 
-> pip install EinsteinTex
+``` bash
+pip install EinsteinTex
+```
 
 ## Getting Started
 
