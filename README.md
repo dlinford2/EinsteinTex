@@ -54,6 +54,7 @@ from EinsteinTex import EinsteinTex
 
 # Initialize EinsteinTex with the desired output file name
 einstein_tex = EinsteinTex('my_gr_document.tex')
+metric_tensor = einstein_tex.create_FLRW_metric_tensor()
 einstein_tex.print_entire_document(metric_tensor, 'FLRW Results')
 ```
 
