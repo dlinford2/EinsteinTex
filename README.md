@@ -14,7 +14,7 @@ Optimized for General Relativity: EinsteinTex is designed specifically for use i
 
 You can install EinsteinTex via pip:
 
-> pip install EinsteinTex==0.1
+> pip install EinsteinTex
 
 ## Getting Started
 
