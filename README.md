@@ -72,10 +72,6 @@ tensor = MetricTensor( # Define the metric itself
 )
 ```
 
-## Documentation
-
-For detailed information on how to use EinsteinTex, you can refer to the documentation available on GitHub.
-
 ## Contributions
 
 Contributions and bug reports are welcome! Feel free to open issues or submit pull requests on GitHub.
