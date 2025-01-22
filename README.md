@@ -12,12 +12,11 @@ EinsteinTex is a Python package designed to make your life easier when working w
 
 * Optimized for General Relativity: EinsteinTex is designed specifically for use in General Relativity research, making it a valuable tool for students, educators, and researchers in the field.
 
-## Installation
+## Installing EinsteinTex
+To install the latest version of EinsteinTex directly from GitHub, run:
 
-You can install EinsteinTex via pip:
-
-``` bash
-pip install EinsteinTex
+```bash
+pip install --upgrade --force-reinstall git+https://github.com/dlinford2/EinsteinTex.git
 ```
 
 ## Getting Started
