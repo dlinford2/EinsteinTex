@@ -25,7 +25,7 @@ pip install EinsteinTex
 Here's a simple example of how to create a LaTeX document using EinsteinTex:
 
 ```python
-from EinsteinTex import EinsteinTex
+from EinsteinTex import EinsteinTexClass
 
 # Initialize EinsteinTex with the desired output file name
 einstein_tex = EinsteinTex('my_gr_document.tex')
@@ -50,7 +50,7 @@ einstein_tex.print_end()
 You can also have EinsteinTex print an entire document, containing a number of different tensors, etc, from a given metric, e.g.,
 
 ```python
-from EinsteinTex import EinsteinTex
+from EinsteinTex import EinsteinTexClass
 
 # Initialize EinsteinTex with the desired output file name
 einstein_tex = EinsteinTex('my_gr_document.tex')
