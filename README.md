@@ -28,7 +28,7 @@ Here's a simple example of how to create a LaTeX document using EinsteinTex:
 from EinsteinTex import EinsteinTexClass
 
 # Initialize EinsteinTex with the desired output file name
-einstein_tex = EinsteinTex('my_gr_document.tex')
+einstein_tex = EinsteinTexClass('my_gr_document.tex')
 
 # Print the preamble with your desired title
 einstein_tex.print_preamble('General Relativity Computations')
@@ -53,7 +53,7 @@ You can also have EinsteinTex print an entire document, containing a number of d
 from EinsteinTex import EinsteinTexClass
 
 # Initialize EinsteinTex with the desired output file name
-einstein_tex = EinsteinTex('my_gr_document.tex')
+einstein_tex = EinsteinTexClass('my_gr_document.tex')
 metric_tensor = einstein_tex.create_FLRW_metric_tensor()
 einstein_tex.print_entire_document(metric_tensor, 'FLRW Results')
 ```
