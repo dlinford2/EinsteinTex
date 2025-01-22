@@ -85,7 +85,7 @@ If you encounter a `ModuleNotFoundError` after installing **EinsteinTex**, this 
 
 Run the following command to check where **EinsteinTex** is installed:
 
-```
+```bash
 pip show EinsteinTex
 ```
 
@@ -102,7 +102,7 @@ If the package is installed in editable mode, Python may not automatically detec
 
 Verify that the installation directory is included in Python's search path:
 
-```
+```python
 import sys
 print(sys.path)
 ```
@@ -113,7 +113,7 @@ If the installation directory (e.g., `/path/to/EinsteinTex`) is not listed, Pyth
 
 To fix the issue, add the installation directory to Python’s search path manually in your script or notebook:
 
-```
+```python
 import sys
 sys.path.append('/path/to/EinsteinTex')  # Replace with your actual path
 from EinsteinTex import EinsteinTex
@@ -125,7 +125,7 @@ This will allow Python to find the package.
 
 For a permanent fix, set the `PYTHONPATH` environment variable to include the installation directory. For example:
 
-```
+```bash
 export PYTHONPATH="/path/to/EinsteinTex:$PYTHONPATH"
 ```
 
@@ -135,7 +135,7 @@ You can add this line to your shell configuration file (e.g., .bashrc, .zshrc, e
 
 If you’re using an environment like Jupyter or Deepnote, restart the kernel after making these changes and try importing the package again:
 
-```
+```python
 from EinsteinTex import EinsteinTex
 ```
 
