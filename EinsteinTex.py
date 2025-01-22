@@ -4,9 +4,8 @@ from einsteinpy.symbolic import ChristoffelSymbols, MetricTensor, RicciTensor, R
 METRIC_DIMENSION = 4
 
 class EinsteinTexClass:
-    
-    def __init__(self, output_file_name):
-        self.output_file_name = output_file_name
+    def __init__(self, filename):
+        self.filename = filename
         
     # Custom function to format derivatives
     def format_derivative(self, expr):
