@@ -6,6 +6,7 @@ METRIC_DIMENSION = 4
 class EinsteinTexClass:
     def __init__(self, filename):
         self.filename = filename
+        self.output_file_name = filename
         
     # Custom function to format derivatives
     def format_derivative(self, expr):
