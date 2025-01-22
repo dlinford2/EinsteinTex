@@ -77,6 +77,72 @@ tensor = MetricTensor( # Define the metric itself
 )
 ```
 
+## Troubleshooting: `ModuleNotFoundError: No module named 'EinsteinTex'`
+
+If you encounter a `ModuleNotFoundError` after installing **EinsteinTex**, this issue may be caused by Python not recognizing the package's installation path, especially when using an editable installation (`pip install -e .`). Follow these steps to fix the issue:
+
+### 1. Verify Installation
+
+Run the following command to check where **EinsteinTex** is installed:
+
+```
+pip show EinsteinTex
+```
+
+Look for the `Location` or `Editable project` location field in the output. This indicates where the package is installed. For example:
+
+```
+Location: /path/to/EinsteinTex
+Editable project location: /path/to/EinsteinTex
+```
+
+If the package is installed in editable mode, Python may not automatically detect the installation.
+
+### 2. Check Python's Search Path
+
+Verify that the installation directory is included in Python's search path:
+
+```
+import sys
+print(sys.path)
+```
+
+If the installation directory (e.g., `/path/to/EinsteinTex`) is not listed, Python won’t recognize the package.
+
+### 3. Fix the Search Path
+
+To fix the issue, add the installation directory to Python’s search path manually in your script or notebook:
+
+```
+import sys
+sys.path.append('/path/to/EinsteinTex')  # Replace with your actual path
+from EinsteinTex import EinsteinTex
+```
+
+This will allow Python to find the package.
+
+### 4. Permanent Fix (Optional)
+
+For a permanent fix, set the `PYTHONPATH` environment variable to include the installation directory. For example:
+
+```
+export PYTHONPATH="/path/to/EinsteinTex:$PYTHONPATH"
+```
+
+You can add this line to your shell configuration file (e.g., .bashrc, .zshrc, etc.) to make it persistent across sessions.
+
+### 5. Restart Your Environment
+
+If you’re using an environment like Jupyter or Deepnote, restart the kernel after making these changes and try importing the package again:
+
+```
+from EinsteinTex import EinsteinTex
+```
+
+### Need More Help?
+
+By following these steps, you should be able to resolve any `ModuleNotFoundError` issues related to **EinsteinTex**. If the problem persists, feel free to [open an issue](https://github.com/dlinford2/EinsteinTex/issues) on this repository for further assistance.
+
 ## Contributions
 
 Contributions and bug reports are welcome! Feel free to open issues or submit pull requests on GitHub.
