@@ -3,7 +3,7 @@ from einsteinpy.symbolic import ChristoffelSymbols, MetricTensor, RicciTensor, R
 
 METRIC_DIMENSION = 4
 
-class EinsteinTex:
+class EinsteinTexClass:
     
     def __init__(self, output_file_name):
         self.output_file_name = output_file_name
